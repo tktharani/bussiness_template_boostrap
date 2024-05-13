@@ -1,0 +1,230 @@
+/* service  */
+.icon{
+    padding: 10px;
+    border: 5px solid whitesmoke;
+    border-radius: 60%;
+    background-color: blue;
+    
+}
+/* team */
+  .hov-eff{
+    display: none;
+  }
+  .on-hover:hover .hov-eff{
+    display: inline;
+  }
+  .social:hover{
+        color:blue;
+  }
+  .port{
+    background-position: center center;
+    background-size: cover;
+  }
+  /* portfolio */
+.anime:hover .imagehover1{
+  display: inline;
+}
+/* portfolio */
+  .imagehover1{
+    display: none;
+  }
+  .Up{
+    display: flex;
+    justify-content: end;
+  }
+  .map{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+    .c1-home:hover{
+        background-color:grey;
+       
+    }
+    .c1-home:hover{
+        color:white;
+        /* background-color: blue; */
+    }
+    
+    .c2-home:hover{
+        background-color: blue;
+    }
+     
+      .navbar-nav .nav-item:hover .nav-link {
+       color: blue;
+         }
+    .h:hover::after{
+      transform: scaleX(1);
+      transform-origin: bottom;
+      background-color: blue;
+    }
+    .h::after{
+      content:" ";
+      position: absolute;
+      width:100%;
+      transform:scaleX(0);
+      height:3px;
+      bottom:0;
+      left:0;
+      background-color: skyblue;
+      transform-origin: bottom;
+      transition: transform 0.35s ease-out;
+
+    }
+    .video-h:hover{
+      color:blue;
+      
+    }
+    .box-shadow1:hover{
+      /* border-style: solid; */
+      /* border-color:grey; */
+      /* box-shadow: 10px 10px 5px grey; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      transform: translateY(10px);
+      transition: transform 0.65s ease-out;
+    }
+    .call-sec{
+      background-color:#F2F1EB;
+    }
+    .videoplaying-sec{
+      background-color: grey;
+    }
+    .coursel{
+      filter: brightness(50%);
+    }
+
+    /* moving img */
+
+    .cover {
+      animation:myanim 5s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease-in-out;
+       border: solid 2px white;
+       height: 300px;
+       width: 300px;
+       background-image:URL("hero-carousel-3.svg");
+       /* background-size: 100% 50vh; */
+       background-repeat: no-repeat;
+       
+         
+     }
+     
+     @keyframes myanim {
+         0% {
+             background-position:0 0;
+         }
+         50% {
+             background-position:0 100%;
+         }
+         100% {
+             background-position:0 0;
+         }
+     }
+     
+     @-webkit-keyframes myanim
+     /* Safari and Chrome */
+      {
+         0% {
+             background-position:0 0;
+         }
+         50% {
+             background-position:20px 0;
+         }
+         100% {
+             background-position:0 0;
+         }
+     }
+     /* social media */
+     ul.menu{
+      position:fixed;
+      top: 50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      list-style-type:none;
+      padding:0;
+      li{
+        display:inline-block;
+        margin:10px;
+        a{
+          i.fa{
+            display:inline-block;
+            height:30px;
+            width:30px;
+            text-align:center;
+            line-height:30px;
+            padding:10px;
+            border-radius:40px;
+            color:#424242;
+            position:relative;
+            transition:all ease 0.2s;
+            &::after{
+              content:"";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin:auto;
+              height:100%;
+              width:100%;
+              z-index:-1;
+              border-radius:40px;
+              background-color: #9E9E9E;
+            }
+            &:hover{
+              color:#fff;
+              font-size:18px;
+              &::after{
+                animation:animate ease 0.6s forwards;
+              }
+            }
+          }
+          i.fa-facebook:hover{
+            &::after{
+              background-color: #3b5998; 
+            }
+           }
+          i.fa-twitter:hover{
+            &::after{
+              background-color: #00aced;
+            }
+          }
+          i.fa-instagram:hover{
+            &::after{
+              background-color: #8a3ab9;
+            }
+          }
+          i.fa-youtube-play:hover{
+            &::after{
+              background-color: #ff0000;
+            }
+          }
+        }
+      }
+    }
+    
+    @keyframes animate{
+      0%,20%{
+        transform:scale(1);
+        border-radius:40px;
+        background-color: #9E9E9E;
+      }
+      30%{
+        transform:scale(1.2);
+      }
+      40%{
+         transform:scale(1.1);
+      }
+      50%{
+        transform:scale(1);
+        border-radius:10px;
+      }
+      60%,100%{
+        transform:scale(1);
+        border-radius:5px;
+      }
+    }
+    
+    
+    
+      
